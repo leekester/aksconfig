@@ -5,6 +5,7 @@ metadata:
   labels:
     env: prod
     application: billing
+---
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -12,6 +13,7 @@ metadata:
   labels:
     env: prod
     application: claims
+---
 apiVersion: v1
 kind: Namespace
 metadata:
