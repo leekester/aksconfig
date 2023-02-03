@@ -1,24 +1,23 @@
 apiVersion: v1
-kind: List
-items:
-- apiVersion: v1
-  kind: Namespace
-  metadata:
-    name: bc-prod
-    labels:
-      env: prod
-      application: billing
-- apiVersion: v1
-  kind: Namespace
-  metadata:
-    name: cc-prod
-    labels:
-      env: prod
-      application: claims
-- apiVersion: v1
-  kind: Namespace
-  metadata:
-    name: pc-prod
-    labels:
-      env: prod
-      application: policy
+kind: Namespace
+metadata:
+  name: bc-prod
+  labels:
+    env: prod
+    application: billing
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: cc-prod
+  labels:
+    env: prod
+    application: claims
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: pc-prod
+  labels:
+    env: prod
+    application: policy
