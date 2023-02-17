@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
   - image: memcached
-    name: web1
+    name: memcache1
     resources:
       requests:
         memory: "64Mi"
